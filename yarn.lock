@@ -1780,6 +1780,10 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
+deepmerge@^1.3.2:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.5.1.tgz#c053bf06fd7276f1994f70c09a0760cb61a56237"
+
 default-require-extensions@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/default-require-extensions/-/default-require-extensions-1.0.0.tgz#f37ea15d3e13ffd9b437d33e1a75b5fb97874cb8"
@@ -5111,6 +5115,13 @@ react-error-overlay@^2.0.1:
     settle-promise "1.0.0"
     source-map "0.5.6"
 
+react-popupbox@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-popupbox/-/react-popupbox-2.0.1.tgz#ba153118c0538269a16e11969b04763227453e65"
+  dependencies:
+    deepmerge "^1.3.2"
+    react "^15.4.2"
+
 react-router-dom@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.2.2.tgz#c8a81df3adc58bba8a76782e946cbd4eae649b8d"
@@ -5176,7 +5187,7 @@ react-scripts@1.0.13:
   optionalDependencies:
     fsevents "1.1.2"
 
-"react@^15 || ^16", react@^15.6.1:
+"react@^15 || ^16", react@^15.4.2, react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:

@@ -1,34 +1,29 @@
 import React, { Component } from 'react'
-import {
-  Menu,
-  Container
-} from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import { Container, Header, Image } from 'semantic-ui-react';
+import FixedNav from '../views/FixedNav.js';
+import Footer from '../views/Footer.js';
+import mediaParagraph from '../assets/images/wireframe/media-paragraph.png';
+import paragraph from '../assets/images/wireframe/paragraph.png';
 
 export default class Customers extends Component {
 
     render() {
         return (
             <div>
-                <Menu fixed="top" size='large'>
-                    <Container>
-                        <Link to="/">
-                            <Menu.Item>Home</Menu.Item>
-                        </Link>
-                        <Link to="/casestudies">
-                            <Menu.Item>Case Studies</Menu.Item>
-                        </Link>
-                        <Link to="/jobs">
-                            <Menu.Item>Jobs</Menu.Item>
-                        </Link>
-                        <Link to="/customers">
-                            <Menu.Item active>Customers</Menu.Item>
-                        </Link>
-                        <Link to="/blog">
-                            <Menu.Item>Blog</Menu.Item>
-                        </Link>
-                    </Container>
-                </Menu>
+                <FixedNav />
+                <Container text style={{ marginTop: '7em' }}>
+                    <Header as='h1'>Customers Starting Template</Header>
+                    <p>This is a basic fixed menu template using fixed size containers.</p>
+                    <p>A text container is used for the main container, which is useful for single column layouts.</p>
+                    <Image src={mediaParagraph} style={{ marginTop: '2em' }} />
+                    <Image src={paragraph} style={{ marginTop: '2em' }} />
+                    <Image src={paragraph} style={{ marginTop: '2em' }} />
+                    <Image src={paragraph} style={{ marginTop: '2em' }} />
+                    <Image src={paragraph} style={{ marginTop: '2em' }} />
+                    <Image src={paragraph} style={{ marginTop: '2em' }} />
+                    <Image src={paragraph} style={{ marginTop: '2em' }} />
+                </Container>
+                <Footer />
             </div>
         )
     }
