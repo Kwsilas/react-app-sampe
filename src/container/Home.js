@@ -15,15 +15,26 @@ import {
 
 import avatar from '../assets/images/avatar/large/nan.jpg';
 import whiteimage from '../assets/images/wireframe/white-image.png';
+import { Link } from 'react-router-dom';
 
 const FixedMenu = () => (
   <Menu fixed='top' size='large'>
     <Container>
-      <Menu.Item as='a' active>Home</Menu.Item>
-      <Menu.Item as='a'>Case Studies</Menu.Item>
-      <Menu.Item as='a'>Jobs</Menu.Item>
-      <Menu.Item as='a'>Customers</Menu.Item>
-      <Menu.Item as='a'>Blog</Menu.Item>
+      <Link to="/">
+        <Menu.Item active>Home</Menu.Item>
+      </Link>
+      <Link to="/casestudies">
+        <Menu.Item>Case Studies</Menu.Item>
+      </Link>
+      <Link to="/jobs">
+        <Menu.Item>Jobs</Menu.Item>
+      </Link>
+      <Link to="/customers">
+        <Menu.Item>Customers</Menu.Item>
+      </Link>
+      <Link to="/blog">
+        <Menu.Item>Blog</Menu.Item>
+      </Link>
     </Container>
   </Menu>
 )
@@ -55,11 +66,21 @@ export default class HomepageLayout extends Component {
           >
             <Container>
               <Menu inverted pointing secondary size='large'>
-                <Menu.Item as='a' active>Home</Menu.Item>
-                <Menu.Item as='a'>Case Studies</Menu.Item>
-                <Menu.Item as='a'>Jobs</Menu.Item>
-                <Menu.Item as='a'>Customers</Menu.Item>
-                <Menu.Item as='a'>Blog</Menu.Item>
+                <Link to="/">
+                  <Menu.Item active>Home</Menu.Item>
+                </Link>
+                <Link to="/casestudies">
+                  <Menu.Item>Case Studies</Menu.Item>
+                </Link>
+                <Link to="/jobs">
+                  <Menu.Item>Jobs</Menu.Item>
+                </Link>
+                <Link to="/customers">
+                  <Menu.Item>Customers</Menu.Item>
+                </Link>
+                <Link to="/blog">
+                  <Menu.Item>Blog</Menu.Item>
+                </Link>
               </Menu>
             </Container>
 
@@ -146,7 +167,7 @@ export default class HomepageLayout extends Component {
               horizontal
               style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-              <a href='#'>Case Studies</a>
+              <a>Case Studies</a>
             </Divider>
             <Header as='h3' style={{ fontSize: '2em' }}>Did We Tell You About Our Bananas?</Header>
             <p style={{ fontSize: '1.33em' }}>
