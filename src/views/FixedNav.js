@@ -23,38 +23,22 @@ export default class FixedNav extends Component {
                                 Home
                             </Menu.Item>
                         </Link>
-                        <Menu.Item 
-                            active={activeNav === 'casestudies'} 
-                            name='casestudies'
-                            onClick={this.handleItemClick}
-                        >
+                        <Menu.Item active={activeNav === 'casestudies'} name='casestudies'>
                             <Link to="/casestudies">
                                 Case Studies
                             </Link>
                         </Menu.Item>
-                        <Menu.Item 
-                            active={activeNav === 'jobs'}
-                            name='jobs'
-                            onClick={this.handleItemClick}
-                        >
+                        <Menu.Item active={activeNav === 'jobs'} name='jobs'>
                             <Link to="/jobs">
                                 Jobs
                             </Link>
                         </Menu.Item>
-                        <Menu.Item 
-                            active={activeNav === 'customers'}
-                            name='customers'
-                            onClick={this.handleItemClick}
-                        >
+                        <Menu.Item active={activeNav === 'customers'} name='customers'>
                             <Link to="/customers">
                                 Customers
                             </Link>
                         </Menu.Item>
-                        <Menu.Item 
-                            active={activeNav === 'blog'}
-                            name='blog'
-                            onClick={this.handleItemClick}
-                        >
+                        <Menu.Item active={activeNav === 'blog'} name='blog'>
                             <Link to="/blog">
                                 Blog
                             </Link>

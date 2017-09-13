@@ -5,7 +5,6 @@ import CaseStudies from './container/Case-Studies.js';
 import Jobs from './container/Jobs.js';
 import Customers from './container/Customers.js';
 import Blog from './container/Blog.js';
-
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 class App extends Component {
