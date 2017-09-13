@@ -16,28 +16,7 @@ import {
 import avatar from '../assets/images/avatar/large/nan.jpg';
 import whiteimage from '../assets/images/wireframe/white-image.png';
 import { Link } from 'react-router-dom';
-
-const FixedMenu = () => (
-  <Menu fixed='top' size='large'>
-    <Container>
-      <Link to="/">
-        <Menu.Item active>Home</Menu.Item>
-      </Link>
-      <Link to="/casestudies">
-        <Menu.Item>Case Studies</Menu.Item>
-      </Link>
-      <Link to="/jobs">
-        <Menu.Item>Jobs</Menu.Item>
-      </Link>
-      <Link to="/customers">
-        <Menu.Item>Customers</Menu.Item>
-      </Link>
-      <Link to="/blog">
-        <Menu.Item>Blog</Menu.Item>
-      </Link>
-    </Container>
-  </Menu>
-)
+import FixedNav from '../views/FixedNav.js';
 
 export default class HomepageLayout extends Component {
   state = {}
@@ -50,7 +29,7 @@ export default class HomepageLayout extends Component {
 
     return (
       <div>
-        { visible ? <FixedMenu /> : null }
+        { visible ? <FixedNav /> : null }
 
         <Visibility
           onBottomPassed={this.showFixedMenu}
